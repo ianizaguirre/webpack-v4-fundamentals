@@ -7,7 +7,7 @@ import makeButton from './button';
 import {
   red,
   blue,
-  makeColor
+  makeColorStyle
 } from './button-styles';
 
-console.log(nav(), top, bottom, makeButton('My First Button!'), makeColor("cyan"));
+console.log(nav(), top, bottom, makeButton('My First Button!'), makeColorStyle("cyan"));

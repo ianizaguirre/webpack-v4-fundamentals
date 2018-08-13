@@ -6,6 +6,17 @@ const blue = 'color: blue;';
 
 const makeColorStyle = color => `color: ${color};`;
 
-exports.red = red;
-exports.blue = blue;
-exports.makeColor = makeColorStyle;
+// Common JS Exports WONT allow Tree Shaking to Work
+// https://github.com/TheLarkInn/webpack-workshop-2018/pull/24/files
+
+// exports.red = red;
+// exports.blue = blue;
+// exports.makeColor = makeColorStyle;
+
+
+// ESM Modules Allow Tree Shaking
+export {
+  red,
+  blue,
+  makeColorStyle
+}
